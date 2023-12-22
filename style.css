@@ -1,29 +1,44 @@
 * {
     margin: 0;
     padding: 0;
+    color: #000000;
 }
 
-body{
+
+body {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(45deg, rgb(7, 117, 6), rgb(0, 64, 30));
+    background: linear-gradient(45deg, rgb(39, 117, 37), rgb(1, 252, 248));
 }
 
-nav{
-    /* border: solid; */
-    margin: 3rem;
+#wrapper {
+    padding: 4rem;
+    height: -webkit-fill-available;
+}
+
+section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* NAV STYLES */
+nav {
+    height: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
-#logo{
+#logo {
     width: 2rem;
     height: 2rem;
-    background-color: black;  
+    background-color: black;
 }
 
-#menu{
+#menu {
     width: 1.5rem;
     height: 1.5rem;
     background-color: black;
@@ -36,13 +51,40 @@ nav{
 }
 
 
-ul{
+ul {
     height: 2rem;
     list-style: none;
     display: flex;
     align-items: center;
     gap: 0.75rem;
 }
-li{
+
+li {
     display: inline-block;
+}
+
+/* LANDING STYLING */
+#landing {
+    text-align: center;
+}
+
+#lh1 {
+    font-size: 3rem;
+}
+
+#lh3 {
+    font-size: 1.5rem;
+    width: 30rem;
+    margin: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-links a {
+    text-decoration: none;
+    margin: 1rem;
+}
+
+.hero-links {
+    margin: 1rem;
 }
