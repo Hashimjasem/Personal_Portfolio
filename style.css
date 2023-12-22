@@ -16,14 +16,6 @@ body {
     height: -webkit-fill-available;
 }
 
-section {
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: solid; */
-}
-
 /* NAV STYLES */
 nav {
     height: 2rem;
@@ -100,10 +92,11 @@ li {
 /* MENU STYLING */
 #menu-pg{
     display: grid;
-    display: grid;
     position: relative;
     top: 30%;
     left: 15%;
+    width: fit-content;
+    display: none;
 }
 
 .menu-line{
@@ -113,4 +106,44 @@ li {
 }
 .menu-line h1{
 font-size: 4rem;
+}
+
+/* ABOUT STYLING */
+#about-pg{
+    display: flex;
+    height: fit-content;
+    width: 50rem;
+    position: relative;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    gap: 2rem;
+
+    /* display: none; */
+}
+
+.left {
+    width: 50%;
+}
+
+.abh1{
+    font-size: 2.5rem;
+}
+
+.about-body{
+    padding: 0.7rem 0rem 0.7rem 0rem;
+}
+
+.ab-top{
+    border-top: solid;
+}
+.ab-bottom{
+    border-bottom: solid;
+}
+
+.right {
+    width: 50%;
+    height: 100;
+    background-color: #000000;
+    border-radius: 0 2rem 0 2rem;
 }
