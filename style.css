@@ -17,10 +17,11 @@ body {
 }
 
 section {
-    position: absolute;
+    /* position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border: solid; */
 }
 
 /* NAV STYLES */
@@ -64,8 +65,15 @@ li {
 }
 
 /* LANDING STYLING */
-#landing {
+#landing-pg {
     text-align: center;
+    display: none;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid;
 }
 
 #lh1 {
@@ -87,4 +95,22 @@ li {
 
 .hero-links {
     margin: 1rem;
+}
+
+/* MENU STYLING */
+#menu-pg{
+    display: grid;
+    display: grid;
+    position: relative;
+    top: 30%;
+    left: 15%;
+}
+
+.menu-line{
+    display: inline-flex;
+    align-items: baseline;
+    text-decoration: none;
+}
+.menu-line h1{
+font-size: 4rem;
 }
