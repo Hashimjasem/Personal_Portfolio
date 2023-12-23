@@ -18,7 +18,7 @@ body {
 
 /* NAV STYLES */
 nav {
-    height: 2rem;
+    height: rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
