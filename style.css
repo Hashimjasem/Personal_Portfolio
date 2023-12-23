@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     color: #000000;
-    overflow: hidden;
 }
 
 body {
@@ -18,28 +17,36 @@ body {
 
 /* NAV STYLES */
 nav {
-    height: rem;
+    height: 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 #logo {
-    width: 3rem;
-    height: 3rem;
+    width: 4rem;
+    height: 4rem;
     background-color: black;
 }
 
 #menu {
+    width: 2rem;
+    height: 2rem;
+}
+
+#menu-svg{
+    object-fit:contain;
+}
+
+#lightdark {
+    margin-right: 1rem;
     width: 1.5rem;
     height: 1.5rem;
 }
 
-#lightdark {
-    width: 1rem;
-    height: 1rem;
-    background-color: black;
+#lightdark-svg {
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 
