@@ -1,7 +1,7 @@
 @font-face {
     font-family: bit;
     src: url(./assets/Minecraft.ttf);
-  }
+}
 
 * {
     margin: 0;
@@ -20,10 +20,9 @@ body {
 
 }
 
-#wrapper {
-    padding: 4rem;
-    height: -webkit-fill-available;
-}
+/* LOADING SCREEN */
+
+
 
 /* NAV STYLES */
 nav {
@@ -31,6 +30,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 5rem;
 }
 
 #logo {
@@ -84,7 +84,7 @@ li {
 #lh1 {
     font-size: 3rem;
 
-} 
+}
 
 
 #lh3 {
