@@ -112,6 +112,16 @@ body {
         transform: translate(0px);
     };
   }
+  @keyframes slide-left {
+    0% {
+        opacity: 0;
+        transform: translatex(100px);
+    };
+    100% {
+        opacity: 1;
+        transform: translate(0px);
+    };
+  }
 
   @keyframes item-1_move {
     0%, 100% {transform: translate(0, 0)} 
@@ -295,6 +305,7 @@ li {
     height: 100;
     background-color: #000000;
     border-radius: 0 2rem 0 2rem;
+    animation: slide-left 2s;
 }
 
 /* PROJECTS STYLING */
