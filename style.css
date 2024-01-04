@@ -1,14 +1,23 @@
+@font-face {
+    font-family: bit;
+    src: url(./assets/Minecraft.ttf);
+  }
+
 * {
     margin: 0;
     padding: 0;
     color: #000000;
+    font-family: bit;
+    letter-spacing: 2px;
 }
 
 body {
     width: 100%;
     height: 100vh;
+    /* background: radial-gradient(ellipse at left top, rgb(255, 196, 0),rgb(81, 43, 5),rgb(8, 4, 0)); */
     background: linear-gradient(45deg, rgb(204, 207, 204), rgb(148, 136, 100));
     overflow: hidden;
+
 }
 
 #wrapper {
@@ -64,7 +73,7 @@ li {
 }
 
 /* LANDING STYLING */
-#landing-pg {
+.landing-pg {
     text-align: center;
     position: absolute;
     top: 50%;
@@ -74,11 +83,13 @@ li {
 
 #lh1 {
     font-size: 3rem;
-}
+
+} 
+
 
 #lh3 {
     font-size: 1.5rem;
-    width: 30rem;
+    width: 35rem;
     margin: auto;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
@@ -94,7 +105,7 @@ li {
 }
 
 /* MENU STYLING */
-#menu-pg {
+.menu-pg {
     display: grid;
     position: relative;
     top: 30%;
@@ -113,7 +124,7 @@ li {
 }
 
 /* ABOUT STYLING */
-#about-pg {
+.about-pg {
     display: flex;
     height: fit-content;
     width: 50rem;
@@ -153,7 +164,7 @@ li {
 
 /* PROJECTS STYLING */
 
-#projects-pg {
+.projects-pg {
     display: flex;
     height: fit-content;
     width: 90rem;
