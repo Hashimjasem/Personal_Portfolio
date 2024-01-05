@@ -1,7 +1,77 @@
+/* font */
 @font-face {
     font-family: bit;
     src: url(./assets/Minecraft.ttf);
 }
+
+/* keyframes */
+@keyframes background-blur {
+    0% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
+
+@keyframes text-drop-in {
+    0% {
+        opacity: 0;
+        transform: translatey(-100px);
+    };
+    100% {
+        opacity: 1;
+        transform: translate(0px);
+    };
+  }
+
+  @keyframes text-slide-in {
+    0% {
+        opacity: 0;
+        transform: translatex(-100px);
+    };
+    100% {
+        opacity: 1;
+        transform: translate(0px);
+    };
+  }
+  @keyframes slide-left {
+    0% {
+        opacity: 0;
+        transform: translatex(100px);
+    };
+    100% {
+        opacity: 1;
+        transform: translate(0px);
+    };
+  }
+
+
+  /* keyframes for loading screen*/
+  @keyframes item-1_move {
+    0%, 100% {transform: translate(0, 0)} 
+    25% {transform: translate(0, 100px)} 
+    50% {transform: translate(100px, 100px)} 
+    75% {transform: translate(100px, 0)} 
+  }
+  
+  @keyframes item-2_move {
+    0%, 100% {transform: translate(0, 0)} 
+    25% {transform: translate(-100px, 0)} 
+    50% {transform: translate(-100px, 100px)} 
+    75% {transform: translate(0, 100px)} 
+  }
+  
+  @keyframes item-3_move {
+    0%, 100% {transform: translate(0, 0)} 
+    25% {transform: translate(0, -100px)} 
+    50% {transform: translate(-100px, -100px)} 
+    75% {transform: translate(-100px, 0)} 
+  }
+  
+  @keyframes item-4_move {
+    0%, 100% {transform: translate(0, 0)} 
+    25% {transform: translate(100px, 0)} 
+    50% {transform: translate(100px, -100px)} 
+    75% {transform: translate(0, -100px)} 
+  }
+
 
 * {
     margin: 0;
@@ -89,66 +159,6 @@ body {
     bottom: 0;
     left: 0;
     animation: item-4_move 1.8s cubic-bezier(.6,.01,.4,1) infinite;
-  }
-  
-  @keyframes text-drop-in {
-    0% {
-        opacity: 0;
-        transform: translatey(-100px);
-    };
-    100% {
-        opacity: 1;
-        transform: translate(0px);
-    };
-  }
-
-  @keyframes text-slide-in {
-    0% {
-        opacity: 0;
-        transform: translatex(-100px);
-    };
-    100% {
-        opacity: 1;
-        transform: translate(0px);
-    };
-  }
-  @keyframes slide-left {
-    0% {
-        opacity: 0;
-        transform: translatex(100px);
-    };
-    100% {
-        opacity: 1;
-        transform: translate(0px);
-    };
-  }
-
-  @keyframes item-1_move {
-    0%, 100% {transform: translate(0, 0)} 
-    25% {transform: translate(0, 100px)} 
-    50% {transform: translate(100px, 100px)} 
-    75% {transform: translate(100px, 0)} 
-  }
-  
-  @keyframes item-2_move {
-    0%, 100% {transform: translate(0, 0)} 
-    25% {transform: translate(-100px, 0)} 
-    50% {transform: translate(-100px, 100px)} 
-    75% {transform: translate(0, 100px)} 
-  }
-  
-  @keyframes item-3_move {
-    0%, 100% {transform: translate(0, 0)} 
-    25% {transform: translate(0, -100px)} 
-    50% {transform: translate(-100px, -100px)} 
-    75% {transform: translate(-100px, 0)} 
-  }
-  
-  @keyframes item-4_move {
-    0%, 100% {transform: translate(0, 0)} 
-    25% {transform: translate(100px, 0)} 
-    50% {transform: translate(100px, -100px)} 
-    75% {transform: translate(0, -100px)} 
   }
 
 /* NAV STYLES */
@@ -310,14 +320,18 @@ li {
 
 /* PROJECTS STYLING */
 
+.projects-wrapper {
+    background-color: #b1b1b179;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    animation: background-blur 2s;
+}
+
 .projects-pg {
     display: flex;
     height: fit-content;
     width: 90rem;
-    position: relative;
-    left: 50%;
-    top: 40%;
-    transform: translate(-50%, -50%);
     gap: 2rem;
 }
 
@@ -385,15 +399,3 @@ li {
     width: 50%;
     z-index: -1;
 }
-
-/* #bg-assets {
-    position: absolute;
-    right: 40%;
-    bottom: 50%;
-    transform: rotate(35deg);
-    width: 150%;
-    z-index: -1;
-}
-#bg-assets #ppr{
-display: none;
-} */
