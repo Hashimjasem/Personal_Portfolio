@@ -326,7 +326,12 @@ li {
     height: 100%;
     backdrop-filter: blur(10px);
     animation: background-blur 2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+
 
 .projects-pg {
     display: flex;
@@ -378,7 +383,7 @@ li {
     right: -30%;
     bottom: 20%;
     transform: rotate(-35deg);
-    width: 70%;
+    width: 60%;
     z-index: -1;
 }
 
@@ -392,10 +397,41 @@ li {
 }
 
 #ppr {
+    transform-origin: left, center;
     position: absolute;
     right: 12%;
-    bottom: 50%;
+    top: -30%;
     transform: rotate(-35deg);
-    width: 50%;
+    width: 40%;
     z-index: -1;
+}
+
+/* 2400px or more */
+@media screen and (min-width: 2400px) {
+    #ppr {
+        right: 17%;
+        top: -50%;
+    }
+}
+
+
+
+
+/* 2000px or less */
+@media screen and (max-width: 2000px) {
+    #ppr {
+        top: -18%;
+    }
+}
+
+@media screen and (max-width: 1700px) {
+    #ppr {
+        top: -9%;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    #ppr {
+        top: 0%;
+    }
 }
