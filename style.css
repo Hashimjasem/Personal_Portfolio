@@ -426,51 +426,34 @@ li {
     align-items: center;
 }
 
-
-
 .projects-pg {
+    padding-top: 5rem;
     display: flex;
-    height: fit-content;
-    width: 90rem;
-    gap: 2rem;
-}
-
-.right {
-    width: 50%;
-    height: 100%;
-}
-
-.proj-list {
-    flex-wrap: wrap;
-}
-
-.proj-list-item {
-    width: 100%;
-    border-top: solid;
-    display: flex;
-    height: 3rem;
+    justify-content: center;
     align-items: center;
 }
 
-.border {
-    border-bottom: solid;
+#projects-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(10, 8rem);
+    grid-template-rows: repeat(5, 8rem);
 }
 
-.proj-link {
-    text-decoration: none;
-    margin-right: 0;
-    margin-left: auto;
-}
-
-.proj-name {
-    font-size: 2rem;
-}
-
-.left {
-    width: 50%;
-    height: 100;
+.regular-project {
+    width: fill;
+    height: fill;
     background-color: #000000;
-    border-radius: 0 2rem 0 2rem;
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.main-project {
+    width: fill;
+    height: fill;
+    background-color: #000000;
+    grid-row: span 2;
+    grid-column: span 2;
 }
 
 #kb {
