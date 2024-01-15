@@ -68,7 +68,9 @@ bentoSlots.forEach(slot => {
   const projectElement = document.createElement('div');
   projectElement.classList.add('project-item');
   projectElement.innerHTML = `
-    <h3>${project.name}</h3>
+    <div class="project-card">
+    ${project.name}
+    </div>
   `;
 //<img src="${project.img}" alt="${project.name}">
   // Determine the class based on the slot number
