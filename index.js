@@ -55,21 +55,29 @@ let projects = [
     {
         name: 'Minesweeper',
         img: './assets/IMG_2493.JPG',
-    },
+    }
 ]
-// this array represents the slots in the bento box
-bentoSlots = [24, 11,11,22,22,12,22,11,21,12,13]
+// this array represents the slots in the bento box. eg 24 represents a 2 by 4 slot in the grid
+bentoSlots = ['tf', 'oo','oo','tt','tt','ot','tt','oo','to','ot','oe']
 
+// Shuffle the projects array randomly
+projects.sort(() => 0.5 - Math.random());
 
-projects.forEach(projects => {
-    let projectElement = document.createElement('div');
-    projectElement.textContent = projects.name
-    // function that randomly assigns project to a spot
+bentoSlots.forEach(slot => {
+  const project = projects.pop(); // Get a random project from the end of the array
+  const projectElement = document.createElement('div');
+  projectElement.classList.add('project-item');
+  projectElement.innerHTML = `
+    <h3>${project.name}</h3>
+  `;
+//<img src="${project.img}" alt="${project.name}">
+  // Determine the class based on the slot number
+  const [rows, columns] = slot.toString().split('');
+  projectElement.classList.add(`${rows}-by-${columns}`);
 
-    //insert it into the grid
-    projectsGrid.appendChild(projectElement);
+  projectsGrid.appendChild(projectElement);
 });
-//insert it into the grid
+
 
 
 

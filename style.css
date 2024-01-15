@@ -440,34 +440,33 @@ li {
     grid-template-rows: repeat(4, 8rem);
 }
 
-.regular-project {
+.project-item{
     width: fill;
     height: fill;
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #ffffff;
 }
 
-.one-by-one{
+.o-by-o{
     grid-row: span 1;
     grid-column: span 1;
 }
-.one-by-two{
+.o-by-t{
     grid-row: span 1;
     grid-column: span 2;
 }
-.one-by-three{
+.o-by-e{
     grid-row: span 1;
     grid-column: span 3;
 }
-.two-by-one{
+.t-by-o{
     grid-row: span 2;
     grid-column: span 1;
 }
-.two-by-two{
+.t-by-t{
     grid-row: span 2;
     grid-column: span 2;
 }
-.two-by-four{
+.t-by-f{
     grid-row: span 2;
     grid-column: span 4;
 }
