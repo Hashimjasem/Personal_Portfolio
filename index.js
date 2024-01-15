@@ -65,29 +65,17 @@ projects.sort(() => 0.5 - Math.random());
 
 bentoSlots.forEach(slot => {
   const project = projects.pop(); // Get a random project from the end of the array
-  const projectElement = document.createElement('div');
+  const projectElement = document.createElement('btn');
   projectElement.classList.add('project-item');
+  projectElement.style.backgroundImage = `url(${project.img})`;
   projectElement.innerHTML = `
     <div class="project-card">
     ${project.name}
     </div>
   `;
-//<img src="${project.img}" alt="${project.name}">
   // Determine the class based on the slot number
   const [rows, columns] = slot.toString().split('');
   projectElement.classList.add(`${rows}-by-${columns}`);
 
   projectsGrid.appendChild(projectElement);
 });
-
-
-
-
-//so in order to fill the grid we need:
-// total number of cells as a var
-// an array of project objects
-//each object should contain:
-//name 
-//image
-//idname
-//
