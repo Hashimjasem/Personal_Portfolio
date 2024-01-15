@@ -381,7 +381,7 @@ li {
     animation: text-drop-in 2s;
 }
 
-.ab-left {
+.ab-right {
     height: max-content;
     width: 90%;
 }
@@ -395,14 +395,14 @@ li {
 }
 
 .ab-top {
-    border-top: solid;
+    border-top: solid black 5px;
 }
 
 .ab-bottom {
-    border-bottom: solid;
+    border-bottom: solid black 5px;
 }
 
-.ab-right {
+.ab-left {
     width: 50%;
     background-color: #000000;
     border-radius: 0 0rem 0 0rem;
@@ -426,14 +426,18 @@ li {
     align-items: center;
 }
 
+.prh1{
+    font-size: 2.5rem;
+}
+
 .projects-pg {
     padding-top: 5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 #projects-grid {
+    border-top: solid black 5px;
+    border-bottom: solid black 5px;
+    padding: 1rem 0 1rem 0;
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(8, 8rem);
@@ -446,6 +450,7 @@ li {
 }
 
 .project-card{
+    color: #ffffff;
     width: 100%;
     height: 100%;
     opacity: 0%;
