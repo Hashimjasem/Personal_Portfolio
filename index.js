@@ -11,73 +11,61 @@ let projects = [
     {
         name: 'my24',
         img: './assets/IMG_2493.JPG',
-        main: true
     },
     {
         name: 'python API',
         img: './assets/IMG_2493.JPG',
-        main: false
     },
     {
         name: 'javascript API',
         img: './assets/IMG_2493.JPG',
-        main: false
     },
     {
         name: 'Twelver',
         img: './assets/IMG_2493.JPG',
-        main: true
     },
     {
         name: 'Najaf Mens Health Clinic',
         img: './assets/IMG_2493.JPG',
-        main: true
     },
     {
         name: 'Java API',
         img: './assets/IMG_2493.JPG',
-        main: false
     },
     {
-        name: 'KOOTA Modile Detailers',
+        name: 'KOOTA Mobile Detailers',
         img: './assets/IMG_2493.JPG',
-        main: true
     },
     {
         name: 'Bun API',
         img: './assets/IMG_2493.JPG',
-        main: false
     },
     {
-        name: 'filler1',
+        name: 'NPM Animation Library',
         img: './assets/IMG_2493.JPG',
-        main: true
     },
     {
-        name: 'filler2',
+        name: 'Online Games',
         img: './assets/IMG_2493.JPG',
-        main: false
     },
     {
-        name: 'filler3',
+        name: 'Snake',
         img: './assets/IMG_2493.JPG',
-        main: true
     },
     {
-        name: 'filler4',
+        name: 'Minesweeper',
         img: './assets/IMG_2493.JPG',
-        main: false
     },
-
 ]
-
-let gridArea = 50
+// this array represents the slots in the bento box
+bentoSlots = [24, 11,11,22,22,12,22,11,21,12,13]
 
 
 projects.forEach(projects => {
     let projectElement = document.createElement('div');
-    projectElement.className = projects.name;
-    projectElement.classList.add(projects.main ? 'main-project' : 'regular-project');
+    projectElement.textContent = projects.name
+    // function that randomly assigns project to a spot
+
     //insert it into the grid
     projectsGrid.appendChild(projectElement);
 });
