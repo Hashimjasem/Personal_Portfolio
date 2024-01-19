@@ -262,7 +262,7 @@ nav {
     background-color: black;
 }
 
-#menu {
+/* #menu {
     width: 2rem;
     height: 2rem;
 }
@@ -280,7 +280,7 @@ nav {
 #lightdark-svg {
     width: 1.5rem;
     height: 1.5rem;
-}
+} */
 
 
 nav ul {
@@ -288,11 +288,12 @@ nav ul {
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: 3rem;
 }
 
-li {
-    display: inline-block;
+.nav-link {
+    list-style: none;
+    text-decoration: none;
 }
 
 /* LANDING STYLING */
