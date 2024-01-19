@@ -407,7 +407,7 @@ li {
     background-color: #000000;
     border-radius: 0 0rem 0 0rem;
     animation: slide-left 2s;
-    background-image: url("./assets/IMG_2493.JPG");
+    background-image: url("./assets/IMG_2519-PhotoRoom.png");
     background-size: cover;
     background-position: center;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.117);
@@ -416,7 +416,7 @@ li {
 /* PROJECTS STYLING */
 
 .projects-wrapper {
-    background-color: #b1b1b179;
+    background-color: #2e2e2e79;
     width: 100%;
     height: 100%;
     backdrop-filter: blur(10px);
@@ -445,12 +445,15 @@ li {
 }
 
 .project-item{
-    background-color: aqua;
+    background-position: center;
+    background-size: cover;
+    outline: #000000 5px;
     transition: all 0.5s ease-out;
 }
 
 .project-card{
     color: #ffffff;
+    border: 5px;
     width: 100%;
     height: 100%;
     opacity: 0%;
@@ -461,7 +464,7 @@ li {
     transition: all 0.5s ease-out;
 }
 .project-card:hover{
-    background-color: #00000029;
+    background-color: #000000c2;
     opacity: 100%;
     transition: all 0.5s ease-out;
 }
