@@ -59,6 +59,7 @@ bentoSlots = ['tf', 'oo', 'oo', 'tt', 'tt', 'ot', 'tt', 'oo', 'to', 'ot', 'oe']
 // Shuffle the projects array randomly
 projects.sort(() => 0.5 - Math.random());
 
+if (window.location.pathname=='/projects.html') {
 bentoSlots.forEach(slot => {
     const project = projects.pop(); // Get a random project from the end of the array
     const projectElement = document.createElement('btn');
@@ -75,3 +76,15 @@ bentoSlots.forEach(slot => {
 
     projectsGrid.appendChild(projectElement);
 });
+}
+
+const trailer = document.getElementById("trailer");
+window.onmousemove = e => {
+    console.log(e)
+}
+window.onmousemove = e => {
+    var x = e.clientX - trailer.offsetWidth / 2
+    var y = e.clientY - trailer.offsetHeight / 2;
+
+    trailer.style.transform = `translate(${x}px, ${y}px)`
+}

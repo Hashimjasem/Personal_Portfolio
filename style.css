@@ -529,6 +529,25 @@ nav ul {
     z-index: -1;
 }
 
+#trailer{
+    background-color: #ffffff;
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000000;
+
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 500ms;
+}
+
+body:hover > #trailer {
+    opacity: 1;
+}
+
+
 /* 2400px or more */
 @media screen and (min-width: 2400px) {
     #ppr {
