@@ -59,7 +59,7 @@
 //     const projectElement = document.createElement('btn');
 //     projectElement.classList.add('project-item');
 //     projectElement.style.backgroundImage = `url(${project.img})`;
-//     projectElement.innerHTML = `
+//     projectElement.innerHTML =
 //     <div class="project-card">
 //     ${project.name}
 //     </div>
