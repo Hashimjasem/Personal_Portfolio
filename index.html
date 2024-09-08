@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <div class="background"></div>
 
     <nav>
         <a href="index.html" class="home-link">
@@ -63,7 +64,7 @@
     <section id="projects-pg">
         <!-- i need to go through an array of objects -->
         <!-- this array will have a project name, an array for the tech stack, a small description a link to a live site, link to a github -->
-        
+
 
         <!-- page title -->
 
@@ -74,6 +75,52 @@
         <!-- buttons to live site & github-->
 
     </section>
+
+    <section id="projects-pg">
+        <!-- i need to go through an array of objects -->
+        <!-- this array will have a project name, an array for the tech stack, a small description a link to a live site, link to a github -->
+
+
+        <!-- page title -->
+
+        <!-- name -->
+        <!-- tech stack -->
+        <!-- small desc -->
+
+        <!-- buttons to live site & github-->
+
+    </section>
+
+    <section id="projects-pg">
+        <!-- i need to go through an array of objects -->
+        <!-- this array will have a project name, an array for the tech stack, a small description a link to a live site, link to a github -->
+
+
+        <!-- page title -->
+
+        <!-- name -->
+        <!-- tech stack -->
+        <!-- small desc -->
+
+        <!-- buttons to live site & github-->
+
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.to(".background", {
+            scrollTrigger: {
+                trigger: ".background",
+                start: "top top ", // Adjust to change when the effect starts
+                end: "+=100%", // Adjust to change when the effect ends
+                scrub: true, // Allows the animation to follow the scroll position
+            },
+            backgroundSize: "500%",
+            ease: "none"
+        });
+    </script>
 </body>
 <script src="./index.js"></script>
 
