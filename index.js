@@ -20,6 +20,10 @@ let tech = [
         bg: "./assets/nodejs.png"
     },
     {
+        name: "ExpressJS",
+        bg: "./assets/expressjs.png"
+    },
+    {
         name: "NextJS",
         bg: "./assets/nextjs.png"
     },
@@ -45,7 +49,7 @@ let tech = [
     },
     {
         name: "Insomnia",
-        bg: "./assets/insomnia.png"
+        bg: "./assets/insomnia.jpg"
     }
     // Add more objects as needed
 ];
