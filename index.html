@@ -37,90 +37,78 @@
         </ul>
     </nav>
 
-
-    <!-- landing page -->
-    <!-- <section class="landing-pg">
-        <div id="profile-picture"></div>
-        <div id="text-container">
-            <div id="hello">Hi! &#x1F44B; My name is</div>
-            <div id="name">Hashim Jasem</div>
-            <div id="info"> Full-Stack Web Developer</div>
-            <div id="info"> 22, Perth, Western Australia</div>
-            <div id="hero-links">
+    <main>
+        <!-- landing page -->
+        <section class="landing">
+            <div id="profile-picture"></div>
+            <div id="text-container">
+                <div id="hello">Hi! &#x1F44B; My name is</div>
+                <div id="name">Hashim Jasem</div>
+                <div id="info"> Full-Stack Web Developer</div>
+                <div id="info"> 22, Perth, Western Australia</div>
                 <div id="hero-links">
-                    <a href="projects.html" class="hero-link">
-                        Look at Some Projects
-                    </a>
-                    <a href="contact.html" class="hero-link">
-                        Contact Me
-                    </a>
+                    <div id="hero-links">
+                        <a href="projects.html" class="hero-link">
+                            Look at Some Projects
+                        </a>
+                        <a href="contact.html" class="hero-link">
+                            Contact Me
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section> -->
+        </section>
+
+        <section id="tech-sec">
+
+            <h1>Tools & Technologies</h1>
+            <div class="technologies-container">
+                <ul id="technologies-list">
+
+                </ul>
+            </div>
 
 
 
-    <section id="projects-pg">
-        <!-- i need to go through an array of objects -->
-        <!-- this array will have a project name, an array for the tech stack, a small description a link to a live site, link to a github -->
+        </section>
+
+        <section id="projects-pg">
+            projects page
+            <!-- i need to go through an array of objects -->
+            <!-- this array will have a project name, an array for the tech stack, a small description a link to a live site, link to a github -->
 
 
-        <!-- page title -->
+            <!-- page title -->
 
-        <!-- name -->
-        <!-- tech stack -->
-        <!-- small desc -->
+            <!-- name -->
+            <!-- tech stack -->
+            <!-- small desc -->
 
-        <!-- buttons to live site & github-->
+            <!-- buttons to live site & github-->
 
-    </section>
+        </section>
 
-    <section id="projects-pg">
-        <!-- i need to go through an array of objects -->
-        <!-- this array will have a project name, an array for the tech stack, a small description a link to a live site, link to a github -->
-
-
-        <!-- page title -->
-
-        <!-- name -->
-        <!-- tech stack -->
-        <!-- small desc -->
-
-        <!-- buttons to live site & github-->
-
-    </section>
-
-    <section id="projects-pg">
-        <!-- i need to go through an array of objects -->
-        <!-- this array will have a project name, an array for the tech stack, a small description a link to a live site, link to a github -->
+        <section id="projects-pg">
+            contact me
+            <!-- i need to go through an array of objects -->
+            <!-- this array will have a project name, an array for the tech stack, a small description a link to a live site, link to a github -->
 
 
-        <!-- page title -->
+            <!-- page title -->
 
-        <!-- name -->
-        <!-- tech stack -->
-        <!-- small desc -->
+            <!-- name -->
+            <!-- tech stack -->
+            <!-- small desc -->
 
-        <!-- buttons to live site & github-->
+            <!-- buttons to live site & github-->
 
-    </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script>
-        gsap.registerPlugin(ScrollTrigger);
+        </section>
 
-        gsap.to(".background", {
-            scrollTrigger: {
-                trigger: ".background",
-                start: "top top ", // Adjust to change when the effect starts
-                end: "+=100%", // Adjust to change when the effect ends
-                scrub: true, // Allows the animation to follow the scroll position
-            },
-            backgroundSize: "500%",
-            ease: "none"
-        });
-    </script>
+    </main>
+
+    <footer>
+
+    </footer>
 </body>
 <script src="./index.js"></script>
 
