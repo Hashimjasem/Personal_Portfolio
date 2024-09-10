@@ -21,7 +21,7 @@ let tech = [
     },
     {
         name: "NextJS",
-        bg: "./assets/npm.png"
+        bg: "./assets/nextjs.png"
     },
     {
         name: "MongoDB",
@@ -40,12 +40,12 @@ let tech = [
         bg: "./assets/tailwind.png"
     },
     {
-        name: "AWS",
-        bg: "./assets/HTML.jpeg"
-    },
-    {
         name: "Figma",
         bg: "./assets/figma.png"
+    },
+    {
+        name: "Insomnia",
+        bg: "./assets/insomnia.png"
     }
     // Add more objects as needed
 ];
@@ -58,23 +58,6 @@ tech.forEach(item => {
     // Create a <li> element for each item
     let li = document.createElement("li");
     
-
-
-
-    // Create an <h1> element for the name
-    let h1 = document.createElement("h1");
-    h1.textContent = item.name;
-
-    let div = document.createElement("div");
-    div.style.backgroundImage = `url(${item.bg})`;
-    
-    // Append the <h1> to the <li>
-    div.appendChild(h1);
-    li.appendChild(div)
-    
-    // Append the <li> to the <ul>
-    ul.appendChild(li);
-    
-    // Append the <li> to the <ul>
+    li.style.backgroundImage = `url(${item.bg})`;
     ul.appendChild(li);
 });
