@@ -54,14 +54,24 @@ let tech = [
     // Add more objects as needed
 ];
 
-// Create a <ul> element
-let ul = document.getElementById("technologies-list");
+let projects
 
-// Iterate through the array of objects
-tech.forEach(item => {
-    // Create a <li> element for each item
-    let li = document.createElement("li");
-    
-    li.style.backgroundImage = `url(${item.bg})`;
-    ul.appendChild(li);
-});
+
+let technofill = (tech) => {
+    for (let i = 0; i < 2; i++) {
+        // Create a <ul> element
+        let ul = document.getElementById("technologies-list");
+
+        // Iterate through the array of objects
+        tech.forEach(item => {
+            // Create a <li> element for each item
+            let li = document.createElement("li");
+
+            li.style.backgroundImage = `url(${item.bg})`;
+            ul.appendChild(li);
+        });
+    }
+}
+
+
+technofill(tech)
