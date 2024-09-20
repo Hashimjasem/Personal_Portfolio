@@ -47,10 +47,6 @@ let tech = [
         name: "Figma",
         bg: "./assets/figma.png"
     },
-    {
-        name: "Insomnia",
-        bg: "./assets/insomnia.jpg"
-    }
     // Add more objects as needed
 ];
 
