@@ -29,19 +29,15 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     width: 100%;
     position: relative;
-    top: 0;
-    overflow: scroll;
+    top: 0vh;
 
 }
 
 section {
-    width: 50rem;
-    height: 100%;
-    background: #0000003d;
-    border: solid;
+    height: 100vh;
+    width: 100%;
 }
 
 /* BACKGROUND */
@@ -66,8 +62,6 @@ nav {
     position: fixed;
     z-index: 99999;
     top: 0;
-    background: #00000068;
-    backdrop-filter: blur(10px);
 }
 
 .home-link {
@@ -103,12 +97,48 @@ nav ul {
     font-size: 0.6rem;
 }
 
-
-/* LANDING STYLING */
 #landing {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.471), rgba(0, 0, 0, 0));
+    backdrop-filter: blur(10px);
+    border-bottom: solid 3px rgba(255, 255, 255, 0.146);
+}
+
+#face {
+    width: 13rem;
+    height: 13rem;
+    background: url(./assets/IMG_2519.JPG);
+    background-size: cover;
+    background-position: center;
+}
+
+#intro {
+    width:50rem;
+    margin: 2rem;
+    padding: 2rem;
+    background: #00000068;
+    backdrop-filter: blur(10px);
+}
+
+#intro a {
+    color: rgba(242, 109, 0, 1);
+    text-decoration: none;
+}
+
+#l1 {
+    font-size: 1.5rem;
+}
+
+#l2 {
+    font-size: 2.2rem;
+}
+
+#l3 {
+    padding-top: 0.4rem;
+    font-size: 1.2rem;
 }
 
 /* ABOUT STYLING */
@@ -141,9 +171,12 @@ nav ul {
 
 
 /* FOOTER STYLING */
-footer {
+#footer {
+    position: relative;
+    bottom: 0;
+    padding: 0;
     width: 100%;
-    height: 90vh;
+    height: 20vh;
     display: flex;
     align-items: center;
     justify-content: center;
