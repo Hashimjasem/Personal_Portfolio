@@ -110,16 +110,8 @@ nav ul {
     border-bottom: solid 3px rgba(255, 255, 255, 0.146);
 }
 
-#face {
-    width: 13rem;
-    height: 13rem;
-    background: url(./assets/IMG_2519.JPG);
-    background-size: cover;
-    background-position: center;
-}
-
 #intro {
-    width:50rem;
+    width: 50rem;
     margin: 2rem;
     padding: 2rem;
     background: #00000068;
@@ -140,12 +132,102 @@ nav ul {
 }
 
 #l3 {
+    padding-top: 1rem;
+    font-size: 1.5rem;
+}
+
+#l4 {
     padding-top: 0.4rem;
     font-size: 1.2rem;
 }
 
 /* ABOUT STYLING */
 #about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-bento {
+    width: 70rem;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 60% auto;
+    grid-template-rows: 4rem 6rem 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+#about-title {
+    grid-column: 1;
+    grid-row: 1/2;
+    width: fit-content;
+    height: 5rem;
+}
+
+#about-title h1 {
+    font-size: 4rem;
+}
+
+#about-img-caro {
+    grid-column: 1;
+    grid-row: 2/5;
+    background: url(./assets/IMG_2519.JPG);
+    background-size: cover;
+    background-position: center;
+}
+
+#basics {
+    padding: 1rem;
+    grid-column: 2;
+    grid-row: 2;
+    background: #00000068;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+#basics h1 {
+    font-size: 2rem;
+}
+
+#basics p {
+    font-size: 1rem;
+    color: rgba(242, 109, 0, 1);
+}
+
+#about-info {
+    padding: 1rem;
+    grid-column: 2;
+    grid-row: 3/4;
+    background: #00000068;
+    backdrop-filter: blur(10px);
+}
+
+#about-list {
+    padding: 2rem;
+    grid-column: 1;
+    grid-row: 5/6;
+    background: #00000068;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#about-list ul{
+    width: 100%;
+    display: inline-grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    list-style: '❤️';
+}
+#about-list ul li{
+padding-left: 5px;
+}
+
+
+/* TECH STYLING */
+#tech {
     display: flex;
     justify-content: center;
     align-items: center;
