@@ -46,7 +46,7 @@ section {
     position: fixed;
     width: 100%;
     height: 100%;
-    background-image: url("./assets/background4.png");
+    background-image: url("./assets/background5.png");
     background-repeat: no-repeat, no-repeat;
     background-position: center center, right bottom;
     background-size: cover;
@@ -233,7 +233,6 @@ nav ul {
 }
 
 #about-experience {
-    display: none;
 
     padding: 1rem;
     grid-column: 1/3;
@@ -268,17 +267,34 @@ margin-left: 20px;
 /* TECH STYLING */
 
 #tech {
-    height: 10rem;
+    height: 15rem;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     width: 100%;
+
     background: linear-gradient(rgba(0, 0, 0, 0.471), rgba(0, 0, 0, 0));
     backdrop-filter: blur(10px);
     border-bottom: solid 3px rgba(255, 255, 255, 0.146);
     border-top: solid 3px rgba(255, 255, 255, 0.146);
 }
 
+#technologies-list{
+    height: 10rem;
+    width: 70rem;
+    list-style: none;
+    gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#technologies-list li{
+height: 5rem;
+width: 5rem;
+background-position: center ;
+background-size: cover;
+}
 
 
 /* PROJECTS STYLING */
