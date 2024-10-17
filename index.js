@@ -50,11 +50,9 @@ let tech = [
     // Add more objects as needed
 ];
 
-let projects
-
 
 let technofill = (tech) => {
-    for (let i = 0; i < 2; i++) {
+    for (let i = 0; i < 1; i++) {
         // Create a <ul> element
         let ul = document.getElementById("technologies-list");
 
@@ -71,3 +69,5 @@ let technofill = (tech) => {
 
 
 technofill(tech)
+
+
